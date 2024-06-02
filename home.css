@@ -1,0 +1,294 @@
+@media (min-aspect-ratio: 16/9){
+    body{
+        text-align: center;
+        justify-content:space-around;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    body{
+        text-align: center;
+        justify-content: last baseline;
+    }
+}   
+
+/*Navigation Bar*/
+.nav{
+    margin: 0 auto;
+    background:  rgba(85, 6, 42, 0.937);
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2%;
+    z-index: 1000;
+}
+.nav ul{
+    list-style-type: none;
+    float: right;
+    display:contents;
+    color: blanchedalmond;
+}
+.nav ul a{
+    text-decoration: none;
+    color: blanchedalmond;
+    margin: 25px;
+    font-size: large;
+}
+.nav ul a:hover{
+    border-color: blanchedalmond;
+    border: 1px solid;
+    border-width: 10%;
+}
+
+/*Home page*/
+#heading{
+    margin-top: 15%;
+    margin-left: 15%;
+    text-align: left;
+}
+#heading h3{
+    color: rgb(242, 9, 114);
+}
+#heading h1{
+    font-weight:bolder;
+    margin-top: 5%;
+}
+#heading p{
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+#heading a{
+    text-decoration: none;
+    border: 1px;
+    background-color:rgba(242, 6, 112, 0.937);
+    color: blanchedalmond;
+    padding: 2%;
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+}
+#heading a:hover{
+    background-color: rgba(85, 6, 42, 0.937);
+}
+#heading img{
+    width: 80%; 
+    height: 100%;
+    margin-top: 2%;
+}
+
+/*Contact Form*/
+#contactForm{
+    border: 2px solid rgb(84, 79, 79);
+    background-color: white;
+    width: 30%;
+    height: 50%;
+    display: none;
+    position: fixed;
+    margin: 10%;
+    margin-left: 35%;
+}
+#contactForm h4{
+    font-weight:bolder;
+    margin-top: 5%;
+    text-align: left;
+    margin-left: 5%;
+}
+#contactForm input[type=text], #contactForm input[type=email]{
+    margin-top: 8%;
+    margin-bottom: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 80%;
+    border:  none;
+    background: none;
+    border-bottom: 2px solid black;
+}
+#contactForm input[type=email]{
+    width: 90%;
+}  
+#contactForm button{
+    text-decoration: none;
+    border: 1px;
+    background-color: rgba(242, 6, 112, 0.937);
+    color: blanchedalmond;
+    padding: 3% 30%;
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3%;
+    margin-bottom: 2%;
+}
+#contactForm button:hover{
+    background-color: rgba(85, 6, 42, 0.937);
+}
+.form-check{
+    margin-top: 7%;
+    margin-bottom: 7%;
+    color: rgb(90, 83, 86);
+}
+#back{
+    text-decoration: none;
+    border: 1px;
+    background-color: rgba(242, 6, 112, 0.937);
+    color: blanchedalmond;
+    cursor: pointer;
+    margin-right: 35%;
+    margin-left: 35%;
+    margin-top: 38%;
+    border-width: 7%;
+    padding:0 2%;
+    font-weight:500;
+    position: fixed;
+}
+#back:hover{
+    background-color: rgba(85, 6, 42, 0.937);
+}
+
+/* Individual slides */
+.mySlides {
+    display: flex;
+    width: 100%; /* Each slide takes up the full width */
+    position: relative;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 70%;
+    position: relative;
+    margin: 1% 25%;
+    margin-top: 1%;
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure slides stay within container */
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 4s;
+  }
+  
+  @keyframes fade {
+    from { opacity: 5; } 
+    to { opacity: 1; }
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    float: left;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+.mySlides:hover .design{
+    opacity: 1;
+}  
+.design{
+    background-color: rgba(242, 6, 112, 0.937);
+    color: white;
+    width: 100%;
+    display: none;
+    padding: 6% 8%;
+}
+.design i{
+    font-size: xx-large;
+}  
+.design p{
+    margin: 5% 5%;
+}
+.design a{
+    text-decoration: none;
+    border: 1px;
+    background-color: white;
+    color:  rgb(243, 28, 125);
+    padding: 2% 30%;
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3%;
+    margin-bottom: 5%;
+}
+
+/*Our project*/
+.project{
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.project h3{
+    margin-top: 10%;
+    color: rgb(242, 9, 114);
+    text-align: center;
+}
+.project h1{
+    font-weight:bolder;
+    margin-top: 2%;
+    text-align: center;
+}
+.project img{
+    width: 75%; 
+    margin-top: 5%;
+    margin-left: 10%;
+    height: auto; 
+    transition: opacity 0.3s ease-in-out;
+}
+.project ul{
+    margin-top: 15%;
+    list-style-type: none;
+    text-align: left;
+    margin-bottom: 10%;
+    margin-right: 15%;
+    background-color: beige;
+}
+.project ul li{
+    margin-top: 15%;
+}
+.project ul li:hover{
+    background-color: rgb(243, 28, 125);
+    color: blanchedalmond;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+/*Growth*/
+.gDiv{
+    background-color: beige;
+    padding: 1%;
+    margin: 10%;
+}
+.gDiv h3{
+    margin-top: 10%;
+    color: rgb(242, 9, 114);
+    text-align: center;
+}
+.gDiv h1{
+    font-weight:bolder;
+    margin-top: 2%;
+    text-align: center;
+}
+.gDiv ul{
+    list-style-type: none;
+    display: flex;
+    margin: 5% 25%;
+}
+.gDiv ul li i{
+    font-size: xx-large;
+}
+.box {
+    padding: 1% 3% 1% 3%; 
+    margin-right: 2%;
+    text-align: center;
+    border: 2px solid rgb(243, 28, 125); 
+  }
+.box:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}  
